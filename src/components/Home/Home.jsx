@@ -6,6 +6,8 @@ import moonImage from "../../images/moon.jpg";
 import venusImage from "../../images/venus.jpg";
 import spaceImage from "../../images/space.jpg";
 import { Typography, Button } from "@mui/material";
+import axios from "axios";
+import FileDownload from "js-file-download";
 import TimeLine from "../TimeLine/TimeLine";
 import {
   SiReact,
@@ -17,6 +19,17 @@ import {
   SiHtml5,
   SiThreedotjs,
 } from "react-icons/si";
+
+const download = (e) => {
+  e.preventDefault();
+  axios({
+    url: "http://localhost:4000",
+    method: "GET",
+    responseType: "blob",
+  }).then((res) => {
+    FileDownload(res.data, "OP RESUME_22.pdf");
+  });
+};
 
 function Home() {
   useEffect(() => {
@@ -125,9 +138,10 @@ function Home() {
           <Typography variant="h2">DEVELOPER</Typography>
         </div>
         <div className="cvbutton">
-          <a href="./OmprakashRESUME.pdf" download>
+          {/* <a href="OP RESUME_22.pdf" download>
             <Button> Download Cv</Button>
-          </a>
+          </a> */}
+          <Button   onClick={(e) => download(e)}>Downlode CV</Button>
         </div>
       </div>
 

@@ -33,15 +33,15 @@
 .homeCanvasContainer > h1 > p:hover {
   transform: translateY(-10px);
 }
-.cvbutton > a {
+.cvbutton > Button {
   background-color: rgb(214, 214, 246);
   transition: all 0.5s;
   color: rgb(0, 0, 0);
   font-size: 500 1rem;
   text-decoration: none;
-  padding: 2vmax 6vmax;
+  padding: 2vmax 2vmax;
   box-sizing: border-box;
-  position: absolute;
+  position:absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
