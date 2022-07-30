@@ -41,7 +41,7 @@
   text-decoration: none;
   padding: 2vmax 2vmax;
   box-sizing: border-box;
-  position:absolute;
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -147,8 +147,9 @@
   display: flex;
   flex-direction: column;
   right: -300px;
-  animation: homeskillsBoxAnimationOn 1s linear forwards;
+  /* animation: homeskillsBoxAnimationOn 1s linear forwards; */
   animation-duration: 1s;
+  animation-duration: 4s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
