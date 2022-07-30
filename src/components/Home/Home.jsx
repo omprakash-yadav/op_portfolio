@@ -23,7 +23,7 @@ import {
 const download = (e) => {
   e.preventDefault();
   axios({
-    url: "http://localhost:4000",
+    url: "https://portfoliobackend12.herokuapp.com/",
     method: "GET",
     responseType: "blob",
   }).then((res) => {
@@ -141,7 +141,7 @@ function Home() {
           {/* <a href="OP RESUME_22.pdf" download>
             <Button> Download Cv</Button>
           </a> */}
-          <Button   onClick={(e) => download(e)}>Downlode CV</Button>
+          <Button onClick={(e) => download(e)}>Downlode CV</Button>
         </div>
       </div>
 
