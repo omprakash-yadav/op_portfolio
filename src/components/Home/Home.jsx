@@ -9,6 +9,7 @@ import { Typography, Button } from "@mui/material";
 import axios from "axios";
 import FileDownload from "js-file-download";
 import TimeLine from "../TimeLine/TimeLine";
+//import pdf from "..Resume/OP RESUME_22.pdf"
 import {
   SiReact,
   SiJavascript,
@@ -23,7 +24,8 @@ import {
 const download = (e) => {
   e.preventDefault();
   axios({
-    url: "https://portfoliobackend12.herokuapp.com/",
+    //url: "https://portfoliobackend12.herokuapp.com/",
+    url:"https://gifted-tie-newt.cyclic.app",
     method: "GET",
     responseType: "blob",
   }).then((res) => {
@@ -146,10 +148,18 @@ function Home() {
           <Typography variant="h2">DEVELOPER</Typography>
         </div>
         <div className="cvbutton">
+          {/* <Button>
+            <a
+              href="https://drive.google.com/drive/u/5/my-drive"
+              target="black"
+            >
+              resume vew
+            </a>
+          </Button> */}
           {/* <a href="OP RESUME_22.pdf" download>
             <Button> Download Cv</Button>
           </a> */}
-          <Button onClick={(e) => download(e)}>Downlode CV</Button>
+        <Button onClick={(e) => download(e)}>Downlode CV</Button>
         </div>
       </div>
 

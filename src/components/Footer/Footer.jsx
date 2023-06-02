@@ -27,9 +27,9 @@ function Footer() {
         >
           <BsLinkedin />
         </a>
-        <a href="https://www.instagram.com/omprakash9572/" target="black">
+        {/* <a href="https://www.instagram.com/omprakash9572/" target="black">
           <BsInstagram />
-        </a>
+        </a> */}
       </div>
     </div>
   );
